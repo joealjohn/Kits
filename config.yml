@@ -1,0 +1,81 @@
+# STORAGE OPTIONS
+# List of supported storage database types:
+# 1. yml, yaml, disk, file, legacy
+#    Stores everything inside `plugins/ContinuumKits/(kits | ender_chests)/uuid of any player here.yml`
+#    Definitely slower, but the most viable for any minecraft server, due to the fact
+#    that MySQL is not available on every single Minecraft server host.
+# 2. mysql
+#    Stores everything separately from your server's files.
+#    Allows for usage on unlimited servers, so you can merge
+#    your EU and NA proxies kit storage.
+# 3. sqlite
+#    Basically a portable version of MySQL, however it is stored inside
+#    `plugins/ContinuumKits/(kits | ender_chests)/db name here (config.yml::storage.ANY_NAME.details.db/ender_chest_db).db`
+# You can name your section whatever you want, so instead of having:
+# storage:
+#   yaml:
+#     ...
+# You can do:
+# storage:
+#   i_can_be_named_whatever:
+#     ...
+storage:
+  # This section can be named whatever
+  # and can be removed if `enabled` is `false`.
+  yaml:
+    # Whether to enable YAML storage
+    enabled: false
+
+    # Must be yml OR yaml OR disk OR file OR legacy for YAML storage
+    type: yaml
+
+  # This section can be named whatever
+  # and can be removed if `enabled` is `false`.
+  mysql:
+    # Whether to enable MySQL storage
+    enabled: false
+
+    # Must be mysql for MySQL storage
+    type: mysql
+
+    # MySQL connection details
+    details:
+      # MySQL server IP address
+      ip: localhost
+      # MySQL server port
+      port: 3306
+      # MySQL database name
+      db: continuum
+      # MySQL user to authenticate as
+      user: root
+      # MySQL password for auth user
+      pass: ''
+
+  # This section can be named whatever
+  # and can be removed if `enabled` is `false`.
+  sqlite:
+    # Whether to enable SQLite storage
+    enabled: true
+
+    # Must be sqlite for SQLite storage
+    type: sqlite
+
+    # SQLite storage settings
+    details:
+      # SQLite database filename
+      # You can name this database whatever you want
+      db: kits
+      # SQLite ender chest database filename
+      # You can name this database whatever you want
+      ender_chest_db: ender_chests
+
+# After generating a code for your kit for others to be able to
+# copy it, how much time will it take for the code to be automatically deleted
+# (if not used)
+copy_kit_expiration:
+  unit: seconds
+  time: 15
+
+# In which worlds should specific commands be blocked?
+blocked_worlds:
+  - 'disabled_world'

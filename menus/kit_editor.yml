@@ -1,0 +1,49 @@
+title: 'Kit Editor'
+size: 54
+
+items:
+  border:
+    enabled: true
+    slots: [45, 46, 49, 52, 53]
+    item:
+      material: black stained glass pane
+      amount: 1
+      name: ' '
+      flags:
+        - '*'
+  save:
+    enabled: true
+    slots: [47]
+    item:
+      material: lime dye
+      amount: 1
+      name: '<green>Save'
+      flags:
+        - '*'
+  import:
+    enabled: true
+    slots: [48]
+    item:
+      material: armor stand
+      amount: 1
+      name: '<yellow>Import'
+      flags:
+        - '*'
+  reset:
+    enabled: true
+    slots: [50]
+    item:
+      material: anvil
+      amount: 1
+      name: '<red>Reset'
+      flags:
+        - '*'
+  generate_code:
+    enabled: true
+    slots: [51]
+    item:
+      material: name tag
+      amount: 1
+      name: '<gold>Generate Code'
+      flags:
+        - '*'

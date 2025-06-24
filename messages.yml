@@ -1,0 +1,182 @@
+# Types: chat, action bar, action_bar
+
+player_only:
+  text: '<red>Only players can execute this command.'
+  type: chat
+
+cleared_inventory:
+  text: '<red>Your inventory has been cleared.'
+  type: chat
+
+premade_kit_is_empty:
+  text: '<red>Premade Kit is empty (not set), therefore you have not been given any items.'
+  type: chat
+
+premade_kit_loaded:
+  text: '<green>You have loaded the Premade Kit.'
+  type: chat
+
+editing_kit_room:
+  text: '<green>You are now editing the Kit Room.'
+  type: chat
+
+saved_kit_room:
+  text: '<green>You have saved the Kit Room items for category <category>'
+  type: chat
+
+kit_command:
+  usage:
+    text:
+      - ''
+      - '<bold><#8ae4ff>KIT HELP</bold>'
+      - ''
+      - '<#394255>/<#a6cafc>kit room'
+      - '  <#839fc7>Opens the Kit Room menu'
+      - ''
+      - '<#394255>/<#a6cafc>kit menu'
+      - '  <#839fc7>Opens the main Kit menu'
+      - ''
+      - '<#394255>/<#a6cafc>kit premade, premadekit, default'
+      - '  <#839fc7>Loads the Premade Kit'
+      - ''
+      - '<#394255>/<#a6cafc>kit copy <kit> <code>'
+      - '  <#839fc7>Copies a different players kit'
+      - ''
+      - '<#394255>/<#a6cafc>kit messages [on, off, ...]'
+      - '  <#839fc7>Toggles/enables/disables'
+      - '  kit equip (load) message broadcasting for'
+      - '  only you'
+      - ''
+      - '<#394255>/<#a6cafc>kit edit <kit | enderchest | ec> <number>'
+      - '  <#839fc7>Edits a specific Kit or Ender Chest.'
+      - ''
+      - '<#394255>/<#a6cafc>kit load <kit | enderchest | ec> <number>'
+      - '  <#839fc7>Loads/equips a specific Kit or Ender Chest.'
+      - ''
+      - '<#394255>/<#a6cafc>kit auto <number | on | off>'
+      - '  <#839fc7>Enables/disables automatic re-kitting'
+      - '  after deaths or kills or changes'
+      - '  the kit being currently used if enabled.'
+      - ''
+    type: chat
+
+copying_kit:
+  text: '<gray>Copying Kit...'
+  type: chat
+
+copied_kit:
+  text: '<green>Copied Kit from code <code> successfully.'
+  type: chat
+
+failed_to_copy_kit:
+  text: '<red>Failed to copy Kit from code <code>.'
+  type: chat
+
+copy_kit_code_not_found:
+  text: '<red>That code is expired or doesn''t exist.'
+  type: chat
+
+# Kit Message pretty state text is defined in `kit_messages.yml`
+no_longer_seeing_kit_messages:
+  text: '<red>Kit equip messages are now <state>'
+  type: chat
+
+# Kit Message pretty state text is defined in `kit_messages.yml`
+now_seeing_kit_messages:
+  text: '<green>Kit equip messages are now <state>'
+  type: chat
+
+kit_does_not_exist:
+  text: '<red>Kit <kit> does not exist.'
+  type: chat
+
+imported_contents:
+  text: '<green>Imported contents successfully.'
+  type: chat
+
+generated_kit_code:
+  text: '<green>Your code is: <white><click:suggest_command:''<code>''><code></click>'
+  type: chat
+
+kit_resetted:
+  text: '<red>Kit has been reset.'
+  type: chat
+
+saved:
+  text: '<green>Kit saved.'
+  type: chat
+
+failed_to_save:
+  text: '<red>Failed to save Kit.'
+  type: chat
+
+player_equipped_kit:
+  text: '<gray>🗡 <player> loaded Kit <kit> [⚓ <distance>m away]'
+  type: chat
+
+locked_kit:
+  text: '<red>You can''t equip a Premium Kit.'
+  type: chat
+
+auto_kit_on:
+  text: '<green>Auto Kit on.'
+  type: chat
+
+auto_kit_off:
+  text: '<red>Auto Kit off.'
+  type: chat
+
+autokit_set:
+  text: '<green>Auto Kit set to kit <kit>.'
+  type: chat
+
+kit_admin_usage:
+  text: '<red>Usage: /kitadmin savepremadekit'
+  type: chat
+
+saved_premade_kit:
+  text: '<green>Saved Premade Kit successfully.'
+  type: chat
+
+ender_chest_resetted:
+  text: '<red>Ender Chest has been reset.'
+  type: chat
+
+saved_ender_chest:
+  text: '<green>Ender Chest saved.'
+  type: chat
+
+failed_to_save_ender_chest:
+  text: '<red>Failed to save Ender Chest.'
+  type: chat
+
+ender_chest_does_not_exist:
+  text: '<red>Ender Chest <ender_chest> does not exist.'
+  type: chat
+  
+equipped_ender_chest:
+  text: '<green>Loaded Ender Chest <ender_chest> successfully.'
+  type: chat
+
+#kit_rules_message:
+#  text: '<red>You need to follow the kit rules when making a kit!'
+#  type: chat
+
+#ender_chest_rules_message:
+#  text: '<red>You need to follow the ender chest rules when making a ender chest!'
+#  type: chat
+
+kit_room_opened_broadcast:
+  enabled: false
+  text: '<gray>ℹ <player> opened the Kit Room.'
+  type: chat
+
+kit_edit_broadcast:
+  enabled: false
+  text: '<gray>ℹ <player> is now editing kit <kit>.'
+  type: chat
+
+ender_chest_edit_broadcast:
+  enabled: false
+  text: '<gray>ℹ <player> is now editing ender chest <enderchest>.'
+  type: chat

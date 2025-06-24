@@ -1,0 +1,93 @@
+title: 'Kits'
+size: 54
+
+items:
+  dark_border:
+    enabled: true
+    slots: [0,8,27,35,45,53]
+    item:
+      material: black stained glass pane
+      amount: 1
+      name: ' '
+      flags:
+        - '*'
+  light_border:
+    enabled: true
+    slots: [1,2,3,4,5,6,7,9,17,18,19,21,23,25,26,28,29,30,31,32,33,34,36,37,39,41,43,44,46,47,48,49,50,51,52]
+    item:
+      material: gray stained glass pane
+      amount: 1
+      name: ' '
+      flags:
+        - '*'
+  clear_inventory:
+    enabled: true
+    slots: [38]
+    item:
+      material: red dye
+      amount: 1
+      name: '<red>Clear Inventory'
+      flags:
+        - '*'
+  kit_room:
+    enabled: true
+    slots: [40]
+    item:
+      material: barrel
+      amount: 1
+      name: '<aqua>Kit Room'
+      flags:
+        - '*'
+  premade_kit:
+    enabled: true
+    slots: [42]
+    item:
+      material: player head
+      amount: 1
+      name: '<aqua>Premade Kit'
+      flags:
+        - '*'
+
+ender_chest_button:
+  slots: [20, 22, 24]
+  item:
+    material: ender chest
+    amount: 1
+    name: '<aqua>Ender Chest <kit>'
+    lore:
+      - '<dark_gray><white>▟</white>▙ <white>LMB to load'
+      - '<dark_gray>▟<white>▙</white> <white>RMB to edit'
+    flags:
+      - '*'
+
+kit_button:
+  normal_slots: [10, 11, 12]
+  premium_slots: [13, 14, 15, 16]
+  item:
+    normal:
+      material: chest
+      amount: 1
+      name: '<aqua>Kit <kit>'
+      lore:
+        - '<dark_gray><white>▟</white>▙ <white>LMB to load'
+        - '<dark_gray>▟<white>▙</white> <white>RMB to edit'
+      flags:
+        - '*'
+    premium:
+      locked:
+        material: chest
+        amount: 1
+        name: '<aqua>Premium Kit <kit>'
+        lore:
+          - '<red>You don''t have access to this kit!'
+        flags:
+          - '*'
+      unlocked:
+        material: chest
+        amount: 1
+        name: '<aqua>Premium Kit <kit>'
+        lore:
+          - '<white>▟<dark_gray>▙ <white>LMB to load'
+          - '<dark_gray>▟<white>▙ RMB to edit'
+        flags:
+          - '*'

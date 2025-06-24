@@ -1,0 +1,17 @@
+# Should kit messages be not sent
+# Set to true if you want to disable kit equip messages
+# or false if you want to keep them
+kit_messages_disabled_entirely: false
+
+# Set to -1 if you want to disable having to be in
+# proximity/radius of a player to receive their kit equip/load
+# message.
+kit_messages_receive_radius: 50
+
+state_on: '<green><bold>ON</bold></green>'
+state_off: '<red><bold>OFF</bold></red>'
+
+# The list of people that have disabled kit messages.
+# Do not edit manually unless required (for example clearing the list).
+data:
+  disabled_cache: null

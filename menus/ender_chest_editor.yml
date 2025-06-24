@@ -1,0 +1,40 @@
+title: 'Ender Chest Editor'
+size: 36
+
+items:
+  border:
+    enabled: true
+    slots: [ 27, 28, 30, 32, 34, 35 ]
+    item:
+      material: black stained glass pane
+      amount: 1
+      name: ' '
+      flags:
+        - '*'
+  save:
+    enabled: true
+    slots: [ 31 ]
+    item:
+      material: lime dye
+      amount: 1
+      name: '<green>Save'
+      flags:
+        - '*'
+  import:
+    enabled: true
+    slots: [ 29 ]
+    item:
+      material: armor stand
+      amount: 1
+      name: '<yellow>Import'
+      flags:
+        - '*'
+  reset:
+    enabled: true
+    slots: [ 33 ]
+    item:
+      material: anvil
+      amount: 1
+      name: '<red>Reset'
+      flags:
+        - '*'

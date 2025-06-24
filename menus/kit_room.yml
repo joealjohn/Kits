@@ -1,0 +1,63 @@
+title: 'Kit Room'
+size: 54
+
+items:
+  border:
+    enabled: true
+    slots: [45, 46, 47, 48, 49, 50, 51, 52, 53]
+    item:
+      material: black stained glass pane
+      amount: 1
+      name: ' '
+      flags:
+        - '*'
+  edit_button:
+    enabled: true
+    slots: [53]
+    item:
+      material: writable book
+      amount: 1
+      name: '<aqua>Edit'
+      lore:
+        - '<white>Only you and other people with'
+        - '<white>permission ''kits.admin'' see this.'
+      flags:
+        - '*'
+  refill_button:
+    enabled: true
+    slots: [45]
+    item:
+      material: structure void
+      amount: 1
+      name: '<aqua>Refill'
+      flags:
+        - '*'
+
+categories:
+  crystal_pvp:
+    item:
+      material: end crystal
+      amount: 1
+      name: '<light_purple>Crystal PvP'
+      flags:
+        - '*'
+  potions:
+    item:
+      material: splash potion
+      amount: 1
+      name: '<red>Potions'
+  consumables:
+    item:
+      material: golden apple
+      amount: 1
+      name: '<yellow>Consumables'
+  arrows:
+    item:
+      material: arrow
+      amount: 1
+      name: '<white>Arrows'
+  miscellaneous:
+    item:
+      material: wooden pickaxe
+      amount: 1
+      name: '<gray>Miscellaneous'

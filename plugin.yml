@@ -1,0 +1,16 @@
+name: ContinuumKits
+version: '2.0.9'
+main: dev.continuum.kits.ContinuumKits
+authors: [Continuum Development, Manere_]
+description: The best CrystalPvP Kits plugin ever...
+api-version: '1.21'
+permissions:
+  kits.kit_command:
+    description: 'Access to the /kit (or /k) command'
+    default: true
+  kits.premium:
+    description: 'Access to premium kits'
+    default: false
+  kits.admin:
+    description: 'Access to the /kitadmin command'
+    default: op
